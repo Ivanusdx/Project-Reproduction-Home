@@ -1,0 +1,160 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 100px;
+  background-color: var(--header-bgr-color);
+}
+
+.header-logo {
+  width: 35px;
+  height: 35px;
+  margin-left: 165px;
+}
+
+.header-line_logo {
+  color: var(--header-line-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.menu-block-nav {
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.menu-list-point {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.point-style {
+  font-size: 20px;
+}
+
+.basket-purchase {
+  margin-right: 165px;
+}
+
+.content{
+  margin-left: 157px;
+  margin-right: 157px;
+}
+
+.chapter-content-company {
+  display: flex;
+  flex-direction: row;
+}
+
+.chapter-picture {
+  max-height: 621px;
+}
+
+.chapter-block-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 145px;
+}
+
+.chapter-title_company {
+  font-size: 60px;
+}
+
+.style-title_company {
+  color: var(--text-color-green);
+}
+
+.chapter-text {
+  padding-bottom: 40px;
+  font-size: 18px;
+  color: var(--text-color-grey);
+}
+
+.button-products {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.chapter-general_style_button {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid var(--border-button-color);
+  color: var(--text-color-green);
+}
+
+.chapter-block-reproduction {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.chapter-title_reproduction {
+  font-size: 40px;
+}
+
+.chapter-list-button_country {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-left: auto
+}
+
+.button_country {
+  background-color: var(--button-color-country);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.card-list-item-picture{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 30px;
+}
+
+.card-item-picture{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var( --card-picture-color);
+  padding: 20px;
+  height: 100%;
+}
+
+.picture{
+width: 100%;
+height: 400px;
+object-fit: cover;
+}
+
+.card-text-author{
+  color: var(--text-color-grey);
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 2px;
+}
+
+.card-name-picture{
+  font-size: 30px;
+}
+
+.card-parameter{
+ padding-bottom: 22px;
+ flex: 1;
+}
+
+.card-price_picture{
+font-size: 24px;
+color: var(--text-color-green);
+}
+
+.button-addendum{
+  margin-top: auto;
+}
