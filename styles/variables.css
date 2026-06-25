@@ -4,11 +4,22 @@
     --text-color-black: #2C2D35;
     --text-color-green: #598D66;
     --text-color-grey: #86928B;
+    --text-color-white: #fff;
     --border-button-color: #598D66;
 
     --button-color-country: #D4E8D9;
 
     --card-picture-color:#E1EDE6;
      
+--background-color-shadow: linear-gradient(
+  to right, 
+  rgba(13, 43, 67, 0.95) 0%,   /* Было 0.8 → стало 0.95 (почти непрозрачный) */
+  rgba(13, 43, 67, 0.5) 70%,   /* Было 0.6 → стало 0.8 */
+  rgba(13, 43, 67, 0.4) 90%,   /* Было 0.2 → стало 0.4 */
+  transparent 100%
+);
+
+ --promo-title-color: #F4F6F5;
+ --promo-button-color:#EEDB6D;
 
 }

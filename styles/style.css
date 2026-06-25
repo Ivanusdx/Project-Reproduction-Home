@@ -108,6 +108,7 @@
 
 .button_country {
   background-color: var(--button-color-country);
+  color: var(--text-color-grey);
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
@@ -157,4 +158,70 @@ color: var(--text-color-green);
 
 .button-addendum{
   margin-top: auto;
+}
+
+.promo{
+  background: url("../images/Rectangle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  center;
+ height: 574px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.promo::before{
+  content: '';
+  position: absolute;
+  z-index: 2;
+   top: 0;
+  left: 0;
+   background: var(--background-color-shadow);
+width: 70%; 
+  height: 100%;
+}
+
+.promo-block-content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+   align-items: flex-start;
+     position: relative;
+     z-index: 2;
+  margin-top: 70px;
+  margin-left: 165px;
+}
+
+.promo-block{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.promo-block_icon{
+ width: 80px;
+ height: 80px;
+}
+
+.promo-block_title{
+ font-size: 40px;
+ color: var( --promo-title-color);
+ max-width: 521px;
+}
+
+.promo-text{
+font-size: 18px;
+color: var(--text-color-white);
+max-width: 540px;
+}
+
+.promo-button{
+margin-top: 40px;
+padding: 21px 60px;
+background-color: var(--promo-button-color);
+font-size: 20px;
 }
