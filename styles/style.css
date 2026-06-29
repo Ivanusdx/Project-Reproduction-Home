@@ -38,7 +38,7 @@
   margin-right: 165px;
 }
 
-.content{
+.content {
   margin-left: 157px;
   margin-right: 157px;
 }
@@ -103,7 +103,7 @@
   display: flex;
   flex-direction: row;
   gap: 32px;
-  margin-left: auto
+  margin-left: auto;
 }
 
 .button_country {
@@ -114,58 +114,58 @@
   padding: 10px 20px;
 }
 
-.card-list-item-picture{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 30px;
+.card-list-item-picture {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
 
-.card-item-picture{
+.card-item-picture {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: var( --card-picture-color);
+  background-color: var(--card-picture-color);
   padding: 20px;
   height: 100%;
 }
 
-.picture{
-width: 100%;
-height: 400px;
-object-fit: cover;
+.picture {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
-.card-text-author{
+.card-text-author {
   color: var(--text-color-grey);
   font-size: 18px;
   padding-top: 12px;
   padding-bottom: 2px;
 }
 
-.card-name-picture{
+.card-name-picture {
   font-size: 30px;
 }
 
-.card-parameter{
- padding-bottom: 22px;
- flex: 1;
+.card-parameter {
+  padding-bottom: 22px;
+  flex: 1;
 }
 
-.card-price_picture{
-font-size: 24px;
-color: var(--text-color-green);
+.card-price_picture {
+  font-size: 24px;
+  color: var(--text-color-green);
 }
 
-.button-addendum{
+.button-addendum {
   margin-top: auto;
 }
 
-.promo{
+.promo {
   background: url("../images/Rectangle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:  center;
- height: 574px;
+  background-position: center;
+  height: 574px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -173,55 +173,88 @@ color: var(--text-color-green);
   margin-bottom: 70px;
 }
 
-.promo::before{
-  content: '';
+.promo::before {
+  content: "";
   position: absolute;
   z-index: 2;
-   top: 0;
+  top: 0;
   left: 0;
-   background: var(--background-color-shadow);
-width: 70%; 
+  background: var(--background-color-shadow);
+  width: 70%;
   height: 100%;
 }
 
-.promo-block-content{
+.promo-block-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
-   align-items: flex-start;
-     position: relative;
-     z-index: 2;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
   margin-top: 70px;
   margin-left: 165px;
 }
 
-.promo-block{
+.promo-block {
   display: flex;
   flex-direction: row;
   gap: 20px;
   align-items: center;
 }
 
-.promo-block_icon{
- width: 80px;
- height: 80px;
+.promo-block_icon {
+  width: 80px;
+  height: 80px;
 }
 
-.promo-block_title{
- font-size: 40px;
- color: var( --promo-title-color);
- max-width: 521px;
+.promo-block_title {
+  font-size: 40px;
+  color: var(--promo-title-color);
+  max-width: 521px;
 }
 
-.promo-text{
-font-size: 18px;
-color: var(--text-color-white);
-max-width: 540px;
+.promo-text {
+  font-size: 18px;
+  color: var(--text-color-white);
+  max-width: 540px;
 }
 
-.promo-button{
-margin-top: 40px;
-padding: 21px 60px;
-background-color: var(--promo-button-color);
-font-size: 20px;
+.promo-button {
+  margin-top: 40px;
+  padding: 21px 60px;
+  background-color: var(--promo-button-color);
+  font-size: 20px;
+}
+
+.team-block-content{
+   position: relative;      
+   z-index: 1;
+}
+
+.team-block-picture_arm{
+ width: 269px;
+   height: 397px;
+}
+
+.team-block{
+  position: absolute;
+  top: 0;                  
+  left: 0;                
+  width: 100%;           
+  height: 100%;         
+  z-index: 2;             
+  pointer-events: none;
+}
+
+.team-block-picture_frame{
+ width: 361px;
+ height: 445px;
+}
+
+.team-title{
+
+}
+
+.team-text{
+  
 }
