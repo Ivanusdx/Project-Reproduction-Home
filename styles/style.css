@@ -4,15 +4,15 @@
   gap: 8px;
   height: 100px;
   background-color: var(--header-bgr-color);
+  padding-inline-start: 165px;
 }
 
-.header-logo {
+.logo {
   width: 35px;
   height: 35px;
-  margin-left: 165px;
 }
 
-.header-line_logo {
+.line_logo {
   color: var(--header-line-color);
   font-size: 20px;
   font-weight: 700;
@@ -38,8 +38,6 @@
   margin: 0 165px;
 }
 
-/* <-----------------------------------------------------------------------> */
-
 .chapter-content-company {
   display: flex;
   flex-direction: row;
@@ -48,7 +46,7 @@
 }
 
 .chapter-picture {
-  max-height: 621px;
+  min-height: 746px;
 }
 
 .chapter-block-text {
@@ -253,4 +251,56 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 168px;
+  background-color: var(--header-bgr-color);
+   padding: 0 165px;
+}
+
+.footer-block1{
+ 
+}
+
+.footer-text{
+ color: var(--text-color-grey);
+}
+
+.links{
+  font-size: 20px;
+}
+
+.footer-block2{
+}
+
+.menu-table th {
+  padding-right: 60px;
+  font-weight: 100;
+}
+
+.menu-table td{
+
+}
+
+.footer-block3{
+ 
+}
+
+.footer-list-item-platforms{
+ display: flex;
+ flex-direction: row;
+ gap: 30px;
+}
+
+.footer-platforms{
+
+}
+
+.footer-special-text{
+  font-size: 12px;
 }

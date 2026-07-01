@@ -34,3 +34,8 @@ picture {
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+  color: var(--text-color-black);
+}
+
