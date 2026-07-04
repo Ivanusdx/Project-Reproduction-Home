@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/Favicon/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./images/Favicon/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./fonts/font.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -15,9 +17,9 @@
       <span class="line_logo">Ink. House</span>
       <nav class="menu-block-nav">
         <ul class="menu-list-point">
-          <li class="point-style">Репродукции</li>
-          <li class="point-style">Новинки</li>
-          <li class="point-style">О нас</li>
+          <li class="text-nav"><a href="#0">Репродукции</a></li>
+          <li class="text-nav"><a href="#0">Новинки</a></li>
+          <li class="text-nav"><a href="#0">О нас</a></li>
         </ul>
       </nav>
       <svg
@@ -56,9 +58,7 @@
             Высокое качество отрисовки на плотной бумаге или льняном холсте.
             Редкие произведения, доступные цены.
           </p>
-          <button class="button-products button-style">
-            Продукция
-          </button>
+          <button class="button-products button-style">Продукция</button>
         </div>
       </section>
       <section class="content">
@@ -78,7 +78,7 @@
                 alt="картина Охота Амура"
                 class="picture"
               />
-              <p class="card-text-author text">Марсель Руссо</p>
+              <p class="text-signature">Марсель Руссо</p>
               <h3 class="card-name-picture">Охота Амура</h3>
               <p class="card-parameter">Холст, масло (50х80)</p>
               <p class="card-price_picture">14 500 руб</p>
@@ -92,7 +92,7 @@
                 alt="картина Дама с собачкой"
                 class="picture"
               />
-              <p class="card-text-author">Анри Селин</p>
+              <p class="text-signature">Анри Селин</p>
               <h3 class="card-name-picture">Дама с собачкой</h3>
               <p class="card-parameter">Акрил, бумага (50х80)</p>
               <p class="card-price_picture">16 500 руб</p>
@@ -106,7 +106,7 @@
                 alt="картина Процедура"
                 class="picture"
               />
-              <p class="card-text-author">Франсуа Дюпон</p>
+              <p class="text-signature">Франсуа Дюпон</p>
               <h3 class="card-name-picture">Процедура</h3>
               <p class="card-parameter">Цветная литография (40х60)</p>
               <p class="card-price_picture">20 000 руб</p>
@@ -120,7 +120,7 @@
                 alt="картина Роза"
                 class="picture"
               />
-              <p class="card-text-author">Луи Детуш</p>
+              <p class="text-signature">Луи Детуш</p>
               <h3 class="card-name-picture">Роза</h3>
               <p class="card-parameter">Бумага, акрил (50х80)</p>
               <p class="card-price_picture">12 000 руб</p>
@@ -134,7 +134,7 @@
                 alt="картина Птичья трапеза"
                 class="picture"
               />
-              <p class="card-text-author">Франсуа Дюпон</p>
+              <p class="text-signature">Франсуа Дюпон</p>
               <h3 class="card-name-picture">Птичья трапеза</h3>
               <p class="card-parameter">Цветная литография (40х60)</p>
               <p class="card-price_picture">22 500 руб</p>
@@ -148,13 +148,11 @@
                 alt="картина Пейзаж с рыбой"
                 class="picture"
               />
-              <p class="card-text-author">Пьер Моранж</p>
+              <p class="text-signature">Пьер Моранж</p>
               <h3 class="card-name-picture">Пейзаж с рыбой</h3>
               <p class="card-parameter">Цветная литография (40х60)</p>
               <p class="card-price_picture">20 000 руб</p>
-              <button class="button-style">
-                В корзину
-              </button>
+              <button class="button-style">В корзину</button>
             </article>
           </li>
         </ul>
@@ -186,60 +184,107 @@
       </section>
       <section class="content">
         <article class="team-block-content">
-           <img src="./images/frame.svg" alt="Рамка" class="team-picture_frame">
+          <img
+            src="./images/frame.svg"
+            alt="Рамка"
+            class="team-picture_frame"
+          />
           <div class="team-block-picture_arm">
-            <img src="./images/arm.svg" alt="Рука" class="team-picture_arm">
+            <img src="./images/arm.svg" alt="Рука" class="team-picture_arm" />
           </div>
           <div class="team-block">
             <h2 class="title">Наша команда</h2>
-          <p class="text">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.</p>
-          <ul class="team-block-person">
-            <li><img src="./images/Ellipse-person1.svg" alt="Человек в команде"></li>
-            <li><img src="./images/Ellipse-person2.svg" alt="Человек в команде"></li>
-            <li><img src="./images/Ellipse-person3.svg" alt="Человек в команде"></li>
-          </ul>
+            <p class="text">
+              Значимость этих проблем настолько очевидна, что базовый вектор
+              развития позволяет оценить значение экспериментов, поражающих
+              по своей масштабности и грандиозности. Мы вынуждены отталкиваться
+              от того, что консультация с широким активом.
+            </p>
+            <ul class="team-block-person">
+              <li>
+                <img
+                  src="./images/Ellipse-person1.svg"
+                  alt="Человек в команде"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/Ellipse-person2.svg"
+                  alt="Человек в команде"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/Ellipse-person3.svg"
+                  alt="Человек в команде"
+                />
+              </li>
+            </ul>
           </div>
         </article>
       </section>
       <footer class="footer">
-        <div class="footer-block1">
-             <img src="./images/Star.svg" alt="Логотип" class="logo" />
-        <span class="line_logo">Ink. House</span>
-        <p class="footer-text">Марсель Руссо</p>
-        <a href="+7 (999) 543-54-54" class="links text">+7 (999) 543-54-54</a>
+        <div>
+          <div class="footer-block-logo">
+            <img src="./images/Star.svg" alt="Логотип" class="logo" />
+            <span class="line_logo">Ink. House</span>
+          </div>
+          <p>
+            <a href="+7 (999) 543-54-54" class="text">+7 (999) 543-54-54</a>
+          </p>
+          <p class="text-signature">Мастерская</p>
         </div>
-        <div class="footer-block2">
-          <table class="menu-table">
-  <tr>
-    <th class="links"><a href="#0">Репродукции</a></th>
-    <th class="links"><a href="#0">Новинки</a></th>
-    <th class="links"><a href="#0">О нас</a></th>
-  </tr>
-  <tr>
-    <td class="footer-text">Франция</td>
-    <td class="footer-text">2021</td>
-    <td class="footer-text">Художники</td>
-  </tr>
-  <tr>
-    <td class="footer-text">Германия</td>
-    <td class="footer-text">2020</td>
-    <td class="footer-text">Менеджеры</td>
-  </tr>
-  <tr>
-    <td class="footer-text">Англия</td>
-    <td></td> 
-    <td></td> 
-  </tr>
-</table>
-        </div>
-        <div class="footer-block3">
+        <table class="menu-table">
+          <tr>
+            <th class="text-nav"><a href="#0">Репродукции</a></th>
+            <th class="text-nav"><a href="#0">Новинки</a></th>
+            <th class="text-nav"><a href="#0">О нас</a></th>
+          </tr>
+          <tr>
+            <td class="text-signature">Франция</td>
+            <td class="text-signature">2021</td>
+            <td class="text-signature">Художники</td>
+          </tr>
+          <tr>
+            <td class="text-signature">Германия</td>
+            <td class="text-signature">2020</td>
+            <td class="text-signature">Менеджеры</td>
+          </tr>
+          <tr>
+            <td class="text-signature">Англия</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <div>
           <ul class="footer-list-item-platforms">
-            <li> <img src="./images/Fosebook.svg" alt="Фейсбук" class="footer-platforms"></li>
-            <li><img src="./images/Instagram.svg" alt="Фейсбук" class="footer-platforms"></li>
-            <li><img src="./images/You-tube.svg" alt="Ютуб" class="footer-platforms"></li>
+            <li>
+              <a href="#0">
+                <img
+                  src="./images/Platfoms/Fosebook.svg"
+                  alt="Фейсбук"
+                  class="footer-platform"
+              /></a>
+            </li>
+            <li>
+              <a href="#0"
+                ><img
+                  src="./images/Platfoms/Instagram.svg"
+                  alt="Инстаграмм"
+                  class="footer-platform"
+              /></a>
+            </li>
+            <li>
+              <a href="#0">
+                <img
+                  src="./images/Platfoms/You-tube.svg"
+                  alt="Ютуб"
+                  class="footer-platform"
+              /></a>
+            </li>
           </ul>
-         <p class="footer-text">Ink. House ®</p>
-         <p class="footer-text footer-special-text">All rights reserved</p>
+          <p class="footer-special-text">Ink. House ®</p>
+          <p class="footer-special-text">All rights reserved</p>
         </div>
       </footer>
     </main>

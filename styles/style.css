@@ -30,7 +30,11 @@
   gap: 60px;
 }
 
-.basket-purchase{
+.menu-list-point a:hover {
+  color: var(--text-color-green);
+}
+
+.basket-purchase {
   margin-right: 165px;
 }
 
@@ -65,25 +69,52 @@
   color: var(--text-color-green);
 }
 
-.text{
-    font-size: 18px;
-    line-height: 150%;
+.text {
+  font-size: 18px;
+  line-height: 150%;
 }
 
-.title{
+.text-signature {
+  font-size: 18px;
+  color: var(--text-color-grey);
+}
+
+.text-nav {
+  font-size: 20px;
+}
+
+.title {
   font-size: 40px;
 }
 
 .button-products {
   margin-top: 40px;
+  outline: none;
 }
 
-.button-style{
+.button-products:hover {
+  background-color: var(--button-hover-bg-colot);
+  color: var(--button-colot-text);
+}
+
+.button-products:focus:not(:focus-visible) {
+  background-color: var(--button-focus-bg-color);
+  color: var(--button-colot-text);
+}
+
+.button-products:focus-visible {
+  border: 1px solid var(--button-focus-visible-border);
+  background-color: var(--button-focus-visible-bg-color);
+  color: var(--text-color-green);
+}
+
+.button-style {
   padding: 21px 60px;
   font-size: 20px;
   background-color: transparent;
   border: 1px solid var(--border-button-color-green);
   color: var(--text-color-green);
+  cursor: pointer;
 }
 
 .chapter-block-reproduction {
@@ -102,11 +133,29 @@
 
 .button_country {
   background-color: var(--button-color-country);
-  color: var(--text-color-grey);
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
   font-size: 20px;
+  color: var(--text-color-black);
+  cursor: pointer;
+  outline: none;
+}
+
+.button_country:hover {
+  background-color: var(--button-hover-bg-colot);
+  color: var(--button-colot-text);
+}
+
+.button_country:focus:not(:focus-visible) {
+  background-color: var(--button-focus-bg-color);
+  color: var(--button-colot-text);
+}
+
+.button_country:focus-visible {
+  border: 2px solid var(--button-focus-visible-border);
+  background-color: var(--button-focus-visible-bg-color);
+  color: var(--text-color-black);
 }
 
 .card-list-item-picture {
@@ -205,102 +254,95 @@
 }
 
 .promo-button {
-  margin-top: 40px; 
+  margin-top: 40px;
   background-color: var(--promo-button-color);
   border: 1px solid var(--border-button-color-black);
   color: var(--text-color-black);
 }
 
-.team-block-content{
+.team-block-content {
   display: flex;
   flex-direction: row;
   gap: 30px;
-   position: relative;      
-   z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
-.team-picture_frame{
- width: 361px;
- height: 445px;
+.team-picture_frame {
+  width: 361px;
+  height: 445px;
 }
 
-.team-block-picture_arm{
+.team-block-picture_arm {
   position: absolute;
-  top: 0;                  
-  left: 0;                
-  width: 100%;           
-  height: 100%;         
-  z-index: 2;             
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
-.team-picture_arm{
- width: 269px;
-   height: 340px;
-   padding-left: 35px;
-   padding-bottom: 5px;
+.team-picture_arm {
+  width: 269px;
+  height: 340px;
+  padding-left: 35px;
+  padding-bottom: 5px;
 }
 
-.team-block{
+.team-block {
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
 }
 
-.team-block-person{
+.team-block-person {
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
 
-.footer{
+.footer {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   height: 168px;
   background-color: var(--header-bgr-color);
-   padding: 0 165px;
+  padding: 23px 165px 0px 165px;
 }
 
-.footer-block1{
- 
-}
-
-.footer-text{
- color: var(--text-color-grey);
-}
-
-.links{
-  font-size: 20px;
-}
-
-.footer-block2{
+.footer-block-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 35px;
 }
 
 .menu-table th {
   padding-right: 60px;
   font-weight: 100;
+  padding-bottom: 6px;
 }
 
-.menu-table td{
-
+.menu-table td {
+  padding-bottom: 6px;
 }
 
-.footer-block3{
- 
+.footer-list-item-platforms {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-bottom: 10px;
 }
 
-.footer-list-item-platforms{
- display: flex;
- flex-direction: row;
- gap: 30px;
+.footer-platform {
+  cursor: pointer;
 }
 
-.footer-platforms{
-
-}
-
-.footer-special-text{
+.footer-special-text {
   font-size: 12px;
+  color: var(--text-color-grey);
+  padding-bottom: 6px;
 }
