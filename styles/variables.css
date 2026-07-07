@@ -8,9 +8,9 @@
   --text-color-white: #fff;
   --border-button-color-green: #598d66;
   --border-button-color-black: #2c2d35;
---button-color-country: #d4e8d9;
+--button-bg-color-country: #d4e8d9;
 
-  --card-picture-color: #e1ede6;
+  --card-picture-bg-color: #e1ede6;
 
   --background-color-shadow: linear-gradient(to right,
       rgba(13, 43, 67, 0.95) 0%,
@@ -18,12 +18,18 @@
       rgba(13, 43, 67, 0.4) 90%,
       transparent 100%);
   --promo-title-color: #f4f6f5;
-  --promo-button-color: #eedb6d;
+  --promo-button-color: #EEDB6D;
+  --promo-button-hover-bg-color: #FAEB97;
+  --promo-button-focus-visible-bg-color: #FAEB97;
+  --promo-button-border-color: #A38314;
+  --promo-button-focus-bg-color: #D9B949;
 
   --button-focus-bg-color: #376b44;
-  --button-hover-bg-colot: #598d66;
-  --button-colot-text: #f4f6f5;
+  --button-hover-bg-color: #598d66;
+  --button-color-text: #f4f6f5;
 
   --button-focus-visible-border: #598d66;
   --button-focus-visible-bg-color: #d4e8d9;
+
+  --nav-text-focus-visible-bg-color: #D4E8D9;
 }

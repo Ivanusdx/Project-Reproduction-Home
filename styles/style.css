@@ -30,9 +30,27 @@
   gap: 60px;
 }
 
-.menu-list-point a:hover {
-  color: var(--text-color-green);
+footer a:hover,
+.menu-list-point a:hover,
+.menu-table a:hover {
+ color: var(--text-color-green);
 }
+
+footer a:focus-visible,
+.menu-list-point a:focus-visible,
+.menu-table a:focus-visible,
+.menu-table th:focus-visible {
+  outline: none ;
+  border: none ;
+  background-color: var(--nav-text-focus-visible-bg-color);
+}
+
+footer a:focus,
+.menu-list-point a:focus,
+.menu-table a:focus{
+  color: var(--text-color-dark-green);
+}
+
 
 .basket-purchase {
   margin-right: 165px;
@@ -92,16 +110,7 @@
   outline: none;
 }
 
-.button-products:hover {
-  background-color: var(--button-hover-bg-colot);
-  color: var(--button-colot-text);
-}
-
-.button-products:focus:not(:focus-visible) {
-  background-color: var(--button-focus-bg-color);
-  color: var(--button-colot-text);
-}
-
+.button-style:focus-visible,
 .button-products:focus-visible {
   border: 1px solid var(--button-focus-visible-border);
   background-color: var(--button-focus-visible-bg-color);
@@ -115,6 +124,7 @@
   border: 1px solid var(--border-button-color-green);
   color: var(--text-color-green);
   cursor: pointer;
+  outline: none;
 }
 
 .chapter-block-reproduction {
@@ -132,7 +142,7 @@
 }
 
 .button_country {
-  background-color: var(--button-color-country);
+  background-color: var(--button-bg-color-country);
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
@@ -142,14 +152,18 @@
   outline: none;
 }
 
+.button-style:hover,
+.button-products:hover,
 .button_country:hover {
-  background-color: var(--button-hover-bg-colot);
-  color: var(--button-colot-text);
+  background-color: var(--button-hover-bg-color);
+  color: var(--button-color-text);
 }
 
+.button-style:focus:not(:focus-visible),
+.button-products:focus:not(:focus-visible),
 .button_country:focus:not(:focus-visible) {
   background-color: var(--button-focus-bg-color);
-  color: var(--button-colot-text);
+  color: var(--button-color-text);
 }
 
 .button_country:focus-visible {
@@ -168,7 +182,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: var(--card-picture-color);
+  background-color: var(--card-picture-bg-color);
   padding: 20px;
   height: 100%;
 }
@@ -258,6 +272,23 @@
   background-color: var(--promo-button-color);
   border: 1px solid var(--border-button-color-black);
   color: var(--text-color-black);
+    outline: none;
+}
+
+.promo-button:hover{
+ background-color: var(--promo-button-hover-bg-color);
+ color: var(--text-color-black);
+}
+
+.promo-button:focus:not(:focus-visible){
+  background-color: var( --promo-button-focus-bg-color);
+   color: var(--text-color-black);
+}
+
+.promo-button:focus-visible{
+  background-color: var(--promo-button-focus-visible-bg-color);
+  border: 1px solid var(--promo-button-border-color);
+   color: var(--text-color-black);
 }
 
 .team-block-content {
