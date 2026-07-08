@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: row;
   gap: 60px;
+  margin-right: 165px;
 }
 
 footer a:hover,
@@ -52,8 +53,12 @@ footer a:focus,
 }
 
 
-.basket-purchase {
-  margin-right: 165px;
+.basket-purchase:hover .icon {
+  stroke: var(--icon-hover-bg-color); 
+}
+
+.basket-purchase:focus .icon {
+  stroke: var(--icon-focus-bg-color); 
 }
 
 .content {
@@ -64,7 +69,7 @@ footer a:focus,
   display: flex;
   flex-direction: row;
   margin-left: 165px;
-  margin-right: 78px;
+  margin-right: 130px;
 }
 
 .chapter-picture {
@@ -80,7 +85,7 @@ footer a:focus,
 }
 
 .chapter-title_company {
-  font-size: 60px;
+  font-size: var(--font-size-title-company);
 }
 
 .style-title_company {
@@ -102,7 +107,7 @@ footer a:focus,
 }
 
 .title {
-  font-size: 40px;
+  font-size: var(--font-size-title);
 }
 
 .button-products {
@@ -112,7 +117,7 @@ footer a:focus,
 
 .button-style:focus-visible,
 .button-products:focus-visible {
-  border: 1px solid var(--button-focus-visible-border);
+  border: 2px solid var(--button-focus-visible-border);
   background-color: var(--button-focus-visible-bg-color);
   color: var(--text-color-green);
 }
@@ -287,7 +292,7 @@ footer a:focus,
 
 .promo-button:focus-visible{
   background-color: var(--promo-button-focus-visible-bg-color);
-  border: 1px solid var(--promo-button-border-color);
+  border: 3px solid var(--promo-button-border-color);
    color: var(--text-color-black);
 }
 
@@ -368,12 +373,59 @@ footer a:focus,
   padding-bottom: 10px;
 }
 
-.footer-platform {
+.platforms {
   cursor: pointer;
+}
+
+.platforms:hover .main-body {
+  fill: var( --icon-hover-bg-color);
+}
+
+.platforms:focus .main-body {
+  fill: var(--icon-focus-bg-color);
+}
+
+.platforms:focus-visible svg{
+ fill: var(--icon-focus-visible-bg-color);
+  box-shadow: 
+    inset 0 0 0 6px var(--icon-focus-visible-box-shadow);
 }
 
 .footer-special-text {
   font-size: 12px;
   color: var(--text-color-grey);
   padding-bottom: 6px;
+}
+
+@media (max-width: 1439px){
+  .header {
+  padding-inline-start: 39px; 
+    padding-inline-end: 39px;
+    max-width: 100%;
+}
+
+.content {
+  margin: 0 39px;
+}
+
+.chapter-content-company {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.chapter-picture {
+    min-height: auto;
+    width: 100%;
+  }
+
+  .chapter-picture img {
+    width: 100%;
+    height: auto;
+  }
+
+   .card-list-item-picture {
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+  }
+
 }
