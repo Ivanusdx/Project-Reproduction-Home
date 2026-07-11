@@ -1,10 +1,12 @@
 .header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 8px;
   height: 100px;
   background-color: var(--header-bgr-color);
   padding-inline-start: 165px;
+  padding-inline-end: 165px;
 }
 
 .logo {
@@ -21,14 +23,12 @@
 
 .menu-block-nav {
   margin-left: auto;
-  margin-right: 60px;
 }
 
 .menu-list-point {
   display: flex;
   flex-direction: row;
   gap: 60px;
-  margin-right: 165px;
 }
 
 footer a:hover,
@@ -398,10 +398,17 @@ footer a:focus,
 }
 
 @media (max-width: 1439px){
+
   .header {
   padding-inline-start: 39px; 
-    padding-inline-end: 39px;
-    max-width: 100%;
+      padding-inline-end: 39px;
+    gap: 0;
+}
+
+.menu-list-point {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .content {
@@ -409,23 +416,13 @@ footer a:focus,
 }
 
 .chapter-content-company {
-  margin-left: 0px;
+  margin-left: 39px;
   margin-right: 0px;
 }
 
 .chapter-picture {
-    min-height: auto;
-    width: 100%;
-  }
-
-  .chapter-picture img {
-    width: 100%;
-    height: auto;
-  }
-
-   .card-list-item-picture {
-    grid-template-columns: 1fr 1fr; 
-    gap: 30px;
-  }
+  min-height: 380px;
+  width: 330px;
+}
 
 }

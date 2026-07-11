@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   min-inline-size: 320px;
   max-inline-size: 1440px;
@@ -11,6 +16,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   color: var(--text-color-black);
+  overflow-x: hidden;
 }
 
 h1,
