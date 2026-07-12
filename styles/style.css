@@ -62,14 +62,14 @@ footer a:focus,
 }
 
 .content {
-  margin: 0 165px;
+  margin: 70px 165px;
 }
 
 .chapter-content-company {
   display: flex;
   flex-direction: row;
   margin-left: 165px;
-  margin-right: 130px;
+  margin-right: 165px;
 }
 
 .chapter-picture {
@@ -136,7 +136,7 @@ footer a:focus,
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 70px 0px 30px;
+  padding-bottom:  30px;
 }
 
 .chapter-list-button_country {
@@ -226,7 +226,6 @@ footer a:focus,
   position: relative;
   z-index: 1;
   overflow: hidden;
-  margin: 70px 0;
 }
 
 .promo::before {
@@ -345,7 +344,12 @@ footer a:focus,
   justify-content: space-between;
   height: 168px;
   background-color: var(--header-bgr-color);
-  padding: 23px 165px 0px 165px;
+  padding: 23px 165px;
+}
+
+.footer-block{
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-block-logo {
@@ -402,7 +406,7 @@ footer a:focus,
   .header {
   padding-inline-start: 39px; 
       padding-inline-end: 39px;
-    gap: 0;
+    gap: 6px;
 }
 
 .menu-list-point {
@@ -412,17 +416,100 @@ footer a:focus,
 }
 
 .content {
-  margin: 0 39px;
+  margin-left: 39px;
+  margin-right: 39px;
 }
 
 .chapter-content-company {
   margin-left: 39px;
-  margin-right: 0px;
+  margin-right: 39px;
 }
 
 .chapter-picture {
-  min-height: 380px;
+  min-height: auto;
   width: 330px;
+}
+
+.chapter-block-text {
+  margin-top: 35px;
+}
+
+.button-products {
+  margin-top: 20px;
+}
+
+.card-list-item-picture {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.promo {
+  height: 545px;
+  object-fit: fill;
+}
+
+.promo-block-content {
+  margin: 70px 37px 70px 39px;
+}
+
+.promo-button {
+  margin-top: 10px;
+}
+
+.team-picture_frame {
+ width: 75%;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.team-block-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-picture_arm {
+  width: 50%;
+  height: 600px;
+  padding-left: 50px;
+  padding-bottom: 200px;
+}
+
+.team-block {
+  gap: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-right: 39px;
+  padding-left: 39px;
+  height: 250px;
+}
+
+.footer-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  width: 100%; 
+
+}
+
+.footer-block-telephone{
+  display: flex;
+  flex-direction: column;
+}
+
+  .footer-block-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  width: 100%; 
+  padding-right: 20px;
+}
+
+.footer-block-platforms{
+  display: flex;
+  flex-direction: column;
 }
 
 }
