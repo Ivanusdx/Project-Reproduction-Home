@@ -6,8 +6,6 @@
   --text-color-dark-green: #376b44;
   --text-color-grey: #86928b;
   --text-color-white: #fff;
-  --font-size-title-company:  clamp(1.875rem, 1.3393rem + 2.6786vw, 3.75rem);
-  --font-size-title: clamp(1.5rem, 1.2143rem + 1.4286vw, 2.5rem);
   --border-button-color-green: #598d66;
   --border-button-color-black: #2c2d35;
 --button-bg-color-country: #d4e8d9;
