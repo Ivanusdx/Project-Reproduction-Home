@@ -1,8 +1,6 @@
 .header {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 8px;
   height: 100px;
   background-color: var(--header-bgr-color);
   padding: 38px 165px;
@@ -15,19 +13,13 @@
   gap: 6px;
 }
 
-.logo {
-  width: 35px;
-  height: 35px;
-}
-
 .line_logo {
   color: var(--header-line-color);
   font-size: 20px;
   font-weight: 700;
-  line-height: 100%;
 }
 
-.menu-block-nav {
+.menu-block-nav { 
   display: flex;
   margin-left: auto;
 }
@@ -81,10 +73,6 @@ footer a:focus,
   gap: 30px;
 }
 
-.chapter-picture {
-  min-height: 746px;
-}
-
 .chapter-block-text {
   display: flex;
   flex-direction: column;
@@ -98,7 +86,7 @@ footer a:focus,
 }
 
 .style-title_company {
-  color: var(--text-color-green);
+  color: var(--text-color-green); 
 }
 
 .text {
@@ -121,7 +109,6 @@ footer a:focus,
 
 .button-products {
   margin-top: 40px;
-  outline: none;
 }
 
 .button-style:focus-visible,
@@ -198,18 +185,18 @@ footer a:focus,
   gap: 8px;
   background-color: var(--card-picture-bg-color);
   padding: 20px 20px 30px 20px;
-  height: 100%;
 }
 
 .picture {
   width: 100%;
-  height: 400px;
+  height: 422px;
   object-fit: cover;
 }
 
 .card-text-author {
   color: var(--text-color-grey);
   padding: 12px 0px 2px;
+  font-size: 18px;
 }
 
 .card-name-picture {
@@ -256,7 +243,8 @@ footer a:focus,
   align-items: flex-start;
   position: relative;
   z-index: 2;
-  margin: 70px 0px 0px 165px;
+  margin-top: 70px;
+  margin-left: 165px;
 }
 
 .promo-block-title {
@@ -264,11 +252,6 @@ footer a:focus,
   flex-direction: row;
   gap: 20px;
   align-items: center;
-}
-
-.promo-icon {
-  width: 80px;
-  height: 80px;
 }
 
 .promo-title {
@@ -350,7 +333,6 @@ footer a:focus,
 .footer {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   justify-content: space-between;
   height: 168px;
   background-color: var(--header-bgr-color);
@@ -420,8 +402,7 @@ footer a:focus,
   }
 
   .header {
-    padding-inline-start: 39px;
-    padding-inline-end: 39px;
+    padding: 39px 38px;
     gap: 6px;
   }
 
@@ -440,7 +421,7 @@ footer a:focus,
   }
 
   .chapter-picture {
-    min-height: 380px;
+    max-height: 380px;
     width: 330px;
   }
 
@@ -461,10 +442,13 @@ footer a:focus,
     grid-template-columns: 1fr 1fr;
   }
 
+  .picture {
+    object-fit: cover;
+  flex-shrink: 0;
+}
+
   .promo {
     height: 545px;
-    object-fit: fill;
-    margin-bottom: 50px;
   }
 
   .promo-block-content {
@@ -476,9 +460,9 @@ footer a:focus,
   }
 
   .team-picture_frame {
-    width: 75%;
-    height: 400px;
-    margin-top: 40px;
+    width: 413px;
+    height: 335px;
+  margin-top: 65px;
   }
 
   .team-block-content {
@@ -487,10 +471,10 @@ footer a:focus,
   }
 
   .team-picture_arm {
-    width: 50%;
-    height: 600px;
-    padding-left: 50px;
-    padding-bottom: 200px;
+    width: 308px;
+    height: 400px;
+    padding-left: 23px;
+    padding-bottom: 40px;
   }
 
   .team-block {
@@ -500,9 +484,8 @@ footer a:focus,
   .footer {
     display: flex;
     flex-direction: column;
-    padding-right: 39px;
-    padding-left: 39px;
     height: 250px;
+    padding: 23px 39px;
   }
 
   .footer-block {
@@ -528,7 +511,7 @@ footer a:focus,
 
 @media (max-width: 689px) {
   body {
-    min-inline-size: 576px;
+    min-inline-size: 600px;
   }
 
   .header {
@@ -555,7 +538,7 @@ footer a:focus,
   }
 
   .basket-purchase {
-    margin-left: 147px;
+    margin-left: auto;
   }
 
   .content {
@@ -615,22 +598,56 @@ footer a:focus,
     outline: none;
   }
 
-  .card-item-picture {
-    max-height: 550px;
-  }
+.picture {
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
 
   .card-name-picture {
     font-size: 24px;
   }
   .card-parameter {
     font-size: 16px;
+    white-space: nowrap;
   }
 
-  .card-text-authorr {
+  .card-text-author {
     font-size: 16px;
   }
 
   .card-price_picture {
     font-size: 20px;
+  }
+
+    .promo {
+    height: 439px;
+    margin-bottom: 0px;
+  }
+
+  .promo-block-content {
+    margin: 50px 33px;
+  }
+
+  .promo-logo{
+    width: 50px;
+    height: 50px;
+  }
+
+.team-picture_frame {
+  width: 303px;
+  height: 246px;
+  margin-top: 52px;
+}
+
+.team-picture_arm {
+  width: 226px;
+  height: 268px;
+  padding-bottom: 0px;
+  padding-left: 22px;
+}
+
+  .team-block {
+    gap: 20px;
   }
 }
