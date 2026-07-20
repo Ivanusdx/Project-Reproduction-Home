@@ -195,7 +195,6 @@ footer a:focus,
 
 .card-text-author {
   color: var(--text-color-grey);
-  padding: 12px 0px 2px;
   font-size: 18px;
 }
 
@@ -366,6 +365,11 @@ footer a:focus,
   display: contents;
 }
 
+  .footer-block-platforms{
+    display: flex;
+    flex-direction: column;
+  }
+
 .footer-list-item-platforms {
   display: flex;
   flex-direction: row;
@@ -521,12 +525,8 @@ footer a:focus,
     padding: 16px 33px;
   }
 
-  .header-block-logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .header-foter-line {
     justify-content: center;
-    gap: 6px;
     width: 100%;
     padding-bottom: 11px;
     border-bottom: 2px solid var(--line-color);
@@ -650,4 +650,76 @@ footer a:focus,
   .team-block {
     gap: 20px;
   }
+
+   .footer {
+    height: 319px;
+  }
+  .footer-block-logo {
+  padding-bottom: 30px;
+}
+
+    .footer-block-menu {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+  }
+
+   .menu-table {
+    text-align: left;
+  }
+
+    .footer-block-platforms{
+    align-items: center;
+    padding-top: 16px;
+  }
+
+ .footer-special-wrapper{
+  display: flex;
+  flex-direction: row;
+ }
+
+ .text-signature {
+  font-size: 16px;
+}
+
+}
+
+@media (max-width: 509px) {
+.header {
+  height: 68px;
+  background-color: var(--header-bgr-color-white);
+  padding: 0px;
+  gap: 0;
+}
+
+.header-block-logo {
+  padding: 16px 88px;
+  height: 68px;
+  background-color: var(--header-bgr-color-white);
+  margin-bottom: 16px;
+}
+
+  .header-foter-line {
+    padding-bottom: 0px;
+    border-bottom:none;
+  }
+
+
+.menu-list-point{
+  display: none;
+}
+
+.menu-block-nav{
+  background-color: var(--header-bgr-color);
+  padding-top: 0px;
+  padding: 16px 15px;
+}
+
+.chapter-content-company {
+  margin-top: 60px;
+}
+
+.content{
+  margin: 60px 15px;
+}
 }
